@@ -1,0 +1,66 @@
+/*Arquivo CSS da Página index2.html*/
+a:link {
+	color:#883322; 
+}
+
+a:visited {
+	color:#552211;
+}
+
+.apres {
+	text-align: center;
+	font-size: 18px;
+}
+
+body {
+	background-color: #99CCCC;
+	color: #883322;
+	font: 16px 'Stoke', verdana, liberation;
+}
+
+.ender {
+	font-size: 15px;
+	float: right;
+	line-height: 140%;
+	text-align: right;
+}
+
+header {
+	display: block;
+	margin-bottom: 1px;
+}
+
+imglogo {
+	border-bottom: 3px solid gray;
+	margin-bottom: 6px;
+	padding-bottom: 15px;
+}
+
+nav {
+	display: block;
+	float: left;
+	font-family: 'Stoke', verdana, liberation;
+	font-weight: bold;
+	width: 170px;
+	margin-right: 10px;
+
+}
+
+nav ul {
+	color: #883322;
+	line-height: 230%;
+	margin-top: 40px;
+}
+
+section {
+	display:block;
+	float: right;
+	width:77%;
+}
+
+ul {
+	line-height: 200%;
+	list-style-type: square;
+}
+	
+}
