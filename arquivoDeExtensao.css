@@ -1,4 +1,4 @@
-/*Arquivo CSS da Página index2.html*/
+/* Arquivo CSS das Páginas HTML index2 mesas */
 a:link {
 	color:#883322; 
 }
@@ -23,6 +23,11 @@ body {
 	font: 16px 'Stoke', verdana, liberation;
 }
 
+.colTH {
+	background-color: #B8AEA9;
+	text-align: left;
+}
+
 .ender {
 	font-size: 15px;
 	float: right;
@@ -39,10 +44,25 @@ header {
 	margin-bottom: 1px;
 }
 
+imgCadeira {
+	width:60px;
+	height: 78px;
+}
+
+.imgCel {
+	background-color:#FFFFFF;
+}
+
 .imglogo {
 	border-bottom: 3px solid gray;
 	margin-bottom: 6px;
 	padding-bottom: 15px;
+}
+
+.linTH {
+	background-color: #B8AEA9;
+	vertical-align: middle;
+	text-align:center;
 }
 
 .listaMesas {
@@ -69,8 +89,9 @@ nav ul {
 }
 
 .preco {
-	color: #CC0000;
+	color: #DD0000;
 	font-weight: bold;
+	vertical-align: middle;
 }
 
 section {
@@ -79,7 +100,51 @@ section {
 	width:77%;
 }
 
+tabCadeira {
+	border: 1px solid;
+	border-collapse: collapse;
+	margin-top: 6px;
+	background-color: #D5D1CF;
+	font-family: 'Raleway', arial, ubuntu;
+}
+
+td, th {
+	border: 3px solid #96867C;
+	color: #000000;
+	padding: 6px 12px 6px 12px;
+}
+
+.titulo {
+	background-color: #8C7B70; 
+	color: #EEEE00;
+	font: bold 24px;
+	text-align: center;
+}
+
 ul {
 	line-height: 200%;
 	list-style-type: square;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
