@@ -24,30 +24,9 @@
 			</ul>
 		</nav>
 		<section class="apres">
-			<form action="/processaCompras.php" method="post">
-				<fieldset>
-					<legend>Dados de Identificao</legend>
-					Nome: <input type="text" name="nome"> CPF: <input type="text" name="cpf"><br>
-					Telefone: <input type="text" name="telefone">
-					Email: <input type="text" name="email">
-					Endereco: <input type="text" name="endereco">
-
-				</fieldset>
-					Mesas: 	<select name="mesas">
-							<option 	
-						</select>
-					Endereco: <input type="text" name="endereco">
-					Endereco: <input type="text" name="endereco">
-					Endereco: <input type="text" name="endereco">
-					Endereco: <input type="text" name="endereco">
-					Endereco: <input type="text" name="endereco">
-				<fieldset>
-					<legend>Produtos</legend>
-					
-				</fieldset>
-			</form>
+			<img src="TouroSentadoLogoGd.png" alt="Touro sentado em formato de logotipo grande"><br>
+						Cadeiras de Couro e Móveis de Escritório.
 		</section>
-
 	</body>
 </html>
 
