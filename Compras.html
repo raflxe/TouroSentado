@@ -24,16 +24,19 @@
 			</ul>
 		</nav>
 		<section class="apres">
-			<form action="/processaCompras.php" method="post">
-				<fieldset>
-					<legend>Dados de Identificao</legend>
-					Nome: <input type="text" name="nome"> CPF: <input type="text" name="cpf"><br>
-					Telefone: <input type="text" name="telefone">
-					Email: <input type="text" name="email">
-					Endereco: <input type="text" name="endereco">
-
+			<form method="post">
+				<fieldset class="fsForm">
+					<legend>Dados de Identifição</legend><br/>
+						<label for="nome" class="lab9">Nome: </label>
+						<input type="text" class="entMed" id="nome" name="TxtNome">
+						<label for="cpf" class="lab70segCol">CPF: </label>
+						<input type="text" name="cpf" class="entPeq" id="cpf" name="TxtCpf"><br/><br/>
+						<label for="tel" class="lab90">Telefone: </label><input type="text" id="tel" name="TxtTelefone"> <label for="email" class="lab70segcol">e-mail: </label> <input type="email" name="TxtEmail" id="email" class="entMed"><br/><br/>
+						<label for="ender" class="lab90">Endereço: </label><input type="text" class="entGnd" id="enter" name="TxtEnder"><br/>
 				</fieldset>
-				<fieldset>
+				
+				
+				<fieldset class="fsResDir">
 <legend>Produtos</legend>
 					Mesas: 
 						<select name="mesas">
@@ -54,24 +57,27 @@
 						<option value="IpanemaPrimeCouro">Ipanema Prime Couro</option>
 						</select>
 					Selecionados: 
-<input type="button" name="remover" value="true" />
-<textarea></textarea>
-Valor: <input type="text" name="valor">
-</fieldset>
+						<input type="button" name="remover" value="true" />
+						<textarea></textarea>
+						Valor: <input type="text" name="valor">
+						</fieldset>
 				<fieldset>
 					<legend>Forma de Pagamento</legend>
-<input type="checkbox" name="visa" value="checked" /> Cartão Visa
-<input type="checkbox" name="mastercard"/> Cartão Mastercard
-<input type="checkbox" name="boleto"/> Boleto Bancário
-<fieldset>
-Parcelas sem Juros: 
-<fieldset>
-
-</fieldset>
-<legend>Dados do Cartão</legend>
-Número: <input type="text" name="numero"/>
-Validade: <input type="text" name="mes"/> / <input type="text" name="ano"/>
-</fieldset>
+						<input type="checkbox" name="visa" value="checked" /> Cartão Visa
+						<input type="checkbox" name="mastercard"/> Cartão Mastercard
+						<input type="checkbox" name="boleto"/> Boleto Bancário
+						Parcelas sem Juros: 
+						<select name="parcelas">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						</select>
+					<fieldset>
+					<legend>Dados do Cartão</legend>
+					Número: <input type="text" name="numero"/>
+					Validade: <input type="text" name="mes"/> / <input type="text" name="ano"/>
+					</fieldset>
 					
 				</fieldset>
 			</form>
