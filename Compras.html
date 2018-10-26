@@ -28,33 +28,46 @@
 				<fieldset class="fsForm">
 					<legend>Dados de Identifição</legend><br/>
 						<label for="nome" class="lab9">Nome: </label>
-						<input type="text" class="entMed" id="nome" name="TxtNome">
+							<input type="text" class="entMed" id="nome" name="TxtNome">
 						<label for="cpf" class="lab70segCol">CPF: </label>
-						<input type="text" name="cpf" class="entPeq" id="cpf" name="TxtCpf"><br/><br/>
-						<label for="tel" class="lab90">Telefone: </label><input type="text" id="tel" name="TxtTelefone"> <label for="email" class="lab70segcol">e-mail: </label> <input type="email" name="TxtEmail" id="email" class="entMed"><br/><br/>
-						<label for="ender" class="lab90">Endereço: </label><input type="text" class="entGnd" id="enter" name="TxtEnder"><br/>
+							<input type="text" name="cpf" class="entPeq" id="cpf" name="TxtCpf"><br/><br/>
+						<label for="tel" class="lab90">Telefone: </label>
+							<input type="text" id="tel" name="TxtTelefone">
+						<label for="email" class="lab70segcol">e-mail: </label>
+							<input type="email" name="TxtEmail" id="email" class="entMed"><br/><br/>
+						<label for="ender" class="lab90">Endereço: </label>
+							<input type="text" class="entGnd" id="enter" name="TxtEnder"><br/>
 				</fieldset>
-				
-				
-				<fieldset class="fsResDir">
-<legend>Produtos</legend>
-					Mesas: 
-						<select name="mesas">
-						Diretor
-						<option value="AlfamobSigma">Alfamob Sigma</option>
-						<option value="AlfaPainelS40M136">Alfa Painel S40M136</option>
-						Reunião
-						<option value="AlfamobCorpSemiOval">Alfamob Corp. semi-oval</option>
-						</select>
-					Cadeiras: 
-						<select name="cadeiras">
-						Secretária
-						<option value="Veneza658FixaCouro">Veneza 658 Fixa Couro</option>
-						<option value="TurimGirCouro">Turim Gir. Couro</option>
-						<option value="MatrizExpGirTecido">Matriz Exp. Gir. Tecido</option>
-						Presidente
-						<option value="Firenze560Couro">Firenze 560 Couro</option>
-						<option value="IpanemaPrimeCouro">Ipanema Prime Couro</option>
+
+
+
+
+
+				<fieldset class="fsResEsq">
+					<legend>Produtos</legend>
+						<br/>Mesas:
+						<select size="1" name="LstMesas" class="entDir">
+							<option selected>---</option>
+							<optgroup label="Diretor">
+								<option value="AlfamobSigma">Alfamob Sigma</option>
+								<option value="AlfaPainelS40M136">Alfa Painel S40M136</option>
+							</optgroup>
+							<optgroup label="Reunião">
+									<option value="AlfamobCorpSemiOval">Alfamob Corp. semi-oval</option>
+							</optgroup>
+						</select><br/><br/>
+						Cadeiras: 
+						<select size="1" name="LstCadeiras" class="entDir">
+						<option selected>---</option>
+						<optgroup label="Secretária">
+							<option value="Veneza658FixaCouro">Veneza 658 Fixa Couro</option>
+							<option value="TurimGirCouro">Turim Gir. Couro</option>
+							<option value="MatrizExpGirTecido">Matriz Exp. Gir. Tecido</option>
+						</optgroup>
+						<optgroup label="Presidente">
+							<option value="Firenze560Couro">Firenze 560 Couro</option>
+							<option value="IpanemaPrimeCouro">Ipanema Prime Couro</option>
+						</optgroup>
 						</select>
 					Selecionados: 
 						<input type="button" name="remover" value="true" />
