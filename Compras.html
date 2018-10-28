@@ -38,11 +38,29 @@
 						<label for="ender" class="lab90">Endereço: </label>
 							<input type="text" class="entGnd" id="enter" name="TxtEnder"><br/>
 				</fieldset>
-
-
-
-
-
+				<fieldset class="fsResDir">
+					<legend>Forma de Pagamento</legend>
+						<input type="radio" name="RadFormaPag" value="v" id="vis" checked /> 
+						<label for="car">Cartão Visa</label><br/>
+						<input type="radio" name="RadFormaPag" value="b" id="bol"/>
+						<label for="din">Cartão Mastercard</label><br/>
+						<input type="radio" name="RadFormaPag" value="b" id="bol"/>
+						<label for="din">Boleto Bancário</label>
+						<p class="parcelas">Parcelas sem Juros: 
+						<select size="1" name="LstParcelas" class="entDir">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						</select><p/>
+					<fieldset class="fsCartao">
+					<legend>Dados do Cartão</legend>
+					<label for="num" class="lab90">Número: </label>
+					<input type="text" class="entPeq" id="num" name="TxtNumero"/><br/>
+					<label for="val" class="lab90">Validade: </label>
+					<input type="text" class="entMes" id="val" name="TxtValMes"/> / <input type="text" class="entAno" name="TxtValAno"/><br/>
+					</fieldset>
+				</fieldset>
 				<fieldset class="fsResEsq">
 					<legend>Produtos</legend>
 						<br/>Mesas:
@@ -58,41 +76,27 @@
 						</select><br/><br/>
 						Cadeiras: 
 						<select size="1" name="LstCadeiras" class="entDir">
-						<option selected>---</option>
-						<optgroup label="Secretária">
-							<option value="Veneza658FixaCouro">Veneza 658 Fixa Couro</option>
-							<option value="TurimGirCouro">Turim Gir. Couro</option>
-							<option value="MatrizExpGirTecido">Matriz Exp. Gir. Tecido</option>
-						</optgroup>
-						<optgroup label="Presidente">
-							<option value="Firenze560Couro">Firenze 560 Couro</option>
-							<option value="IpanemaPrimeCouro">Ipanema Prime Couro</option>
-						</optgroup>
-						</select>
-					Selecionados: 
-						<input type="button" name="remover" value="true" />
-						<textarea></textarea>
-						Valor: <input type="text" name="valor">
+							<option selected>---</option>
+							<optgroup label="Secretária">
+								<option value="Veneza658FixaCouro">Veneza 658 Fixa Couro</option>
+								<option value="TurimGirCouro">Turim Gir. Couro</option>
+								<option value="MatrizExpGirTecido">Matriz Exp. Gir. Tecido</option>
+							</optgroup>
+							<optgroup label="Presidente">
+								<option value="Firenze560Couro">Firenze 560 Couro</option>
+								<option value="IpanemaPrimeCouro">Ipanema Prime Couro</option>
+							</optgroup>
+						</select><br/><br/>
+						Selecionados: 
+							<input type="button" name="remover" class="entDir" /><br/><br/>
+							<textarea name="LstSelecionados" class="lstSel"></textarea><br/>
+						Valor: 
+						<input readonly type="text" name="Txtvalor" class="shwValor"><br/><br/>
 						</fieldset>
-				<fieldset>
-					<legend>Forma de Pagamento</legend>
-						<input type="checkbox" name="visa" value="checked" /> Cartão Visa
-						<input type="checkbox" name="mastercard"/> Cartão Mastercard
-						<input type="checkbox" name="boleto"/> Boleto Bancário
-						Parcelas sem Juros: 
-						<select name="parcelas">
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						</select>
-					<fieldset>
-					<legend>Dados do Cartão</legend>
-					Número: <input type="text" name="numero"/>
-					Validade: <input type="text" name="mes"/> / <input type="text" name="ano"/>
-					</fieldset>
-					
-				</fieldset>
+						<p class="entDir">
+							<input type="submit" name="btnEnviar" value="Enviar" />
+							<input type="reset" name="BtnLimpar" value="Limpar" />
+						</p>
 			</form>
 		</section>
 
